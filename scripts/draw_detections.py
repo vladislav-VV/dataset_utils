@@ -130,7 +130,7 @@ def opt():
     args = argparse.ArgumentParser()
     args.add_argument("--path_2dir_images", type=str, default=r"C:\DATASET\COCO\val2017", help="Path to directory with images")
     args.add_argument("--path_2dir_ann", type=str, default=r"H:\DATASET\COCO\coco2017labels\coco\labels\val2017", help="Path to directory with annotations")
-    args.add_argument("--mode", type=int, default=0, help="0 - format darknet; 1 - abs coord")
+    args.add_argument("--mode", type=int, default=0, help="mode 0 - format darknet; mode 1 - abs coord")
 
     return args.parse_args()
 
