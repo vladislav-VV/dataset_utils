@@ -11,8 +11,9 @@ class GetDetections:
 
     def __init__(self, path_2dir_images: str, path_2dir_ann: str, mode: int = 0):
         self.font = cv2.FONT_HERSHEY_COMPLEX
+        self.__modes = (0, 1)
         self.pick_mode(mode)
-        self.suffixes = ["png", "jpg", "bmp"]
+        self.__suffixes = ["png", "jpg", "bmp"]
         self.paths2images = self.__get_paths_images(path_2dir_images)
         self.path_2dir_ann = path_2dir_ann
 
@@ -28,13 +29,14 @@ class GetDetections:
             print(f"You pick mode {mode}")
         else:
             print(f"This pick mode {mode} not found!")
+            exit()
 
 
 
 
     def __get_paths_images(self, path_2dir_images: str) -> list:
         paths_to_images = []
-        for suffix in self.suffixes:
+        for suffix in self.__suffixes:
             paths_to_images.extend(glob.glob(os.path.join(path_2dir_images, "*." + suffix)))
 
         return paths_to_images
@@ -132,8 +134,8 @@ def main(args):
 
 def opt():
     args = argparse.ArgumentParser()
-    args.add_argument("--path_2dir_images", type=str, default=r"C:\DATASET\COCO\val2017", help="Path to directory with images")
-    args.add_argument("--path_2dir_ann", type=str, default=r"H:\DATASET\COCO\coco2017labels\coco\labels\val2017", help="Path to directory with annotations")
+    args.add_argument("--path_2dir_images", type=str, default=r"C:\DATASET\COCO\val2017", help="Path to the directory with images")
+    args.add_argument("--path_2dir_ann", type=str, default=r"H:\DATASET\COCO\coco2017labels\coco\labels\val2017", help="Path to the directory withannotations")
     args.add_argument("--mode", type=int, default=0, help="mode 0 - format darknet; mode 1 - abs coord")
 
     return args.parse_args()
