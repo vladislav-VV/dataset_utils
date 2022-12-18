@@ -42,7 +42,10 @@ class GetDetections:
 
 
 
-    def read_box_mode_0(self, path2ann: str, width_image: int, height_image: int) -> list:
+    def read_box_mode_0(self, *args) -> list:
+        path2ann = args[0]
+        width_image = args[1]
+        height_image = args[2]
         detections = []
         with open(path2ann, "r") as f:
             for line in f:
@@ -67,8 +70,9 @@ class GetDetections:
 
 
 
-    def read_box_mode_1(self, path2ann: str, width_image: int = None, height_image:int = None) -> list:
+    def read_box_mode_1(self, *args) -> list:
         detections = []
+        path2ann = args[0]
         with open(path2ann, "r") as f:
             for line in f:
                 detection = dict()
