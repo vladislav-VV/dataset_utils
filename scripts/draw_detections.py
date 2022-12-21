@@ -109,7 +109,7 @@ class GetDetections:
 
     def draw_detections(self, image: np.ndarray, detections: list) -> np.ndarray:
         for detection in detections:
-            nc = str(detection["nc"],)
+            nc = str(detection["nc"])
             pt0 = (detection["x1"], detection["y1"])
             pt1 = (detection["x2"], detection["y2"])
             color = tuple(random.randint(0, 255) for _ in range(3))
@@ -134,8 +134,8 @@ def main(args):
 
 def opt():
     args = argparse.ArgumentParser()
-    args.add_argument("--path_2dir_images", type=str, default=r"C:\DATASET\COCO\val2017", help="Path to the directory with images")
-    args.add_argument("--path_2dir_ann", type=str, default=r"H:\DATASET\COCO\coco2017labels\coco\labels\val2017", help="Path to the directory withannotations")
+    args.add_argument("--path_2dir_images", type=str, default=r"/media/vladislav/Windows-SSD/DATASET/COCO/3_class/val", help="Path to the directory with images")
+    args.add_argument("--path_2dir_ann", type=str, default=r"/media/vladislav/Windows-SSD/DATASET/COCO/3_class/val", help="Path to the directory withannotations")
     args.add_argument("--mode", type=int, default=0, help="mode 0 - format darknet; mode 1 - abs coord")
 
     return args.parse_args()

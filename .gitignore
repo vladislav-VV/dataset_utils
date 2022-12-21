@@ -1,3 +1,4 @@
 .idea/
 env/
 scripts/train_test/
+coco_utils/coco_export.py
