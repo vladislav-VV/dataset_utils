@@ -1,0 +1,9 @@
+\\unit32stend2\exchange2\Dataset\ARC\TV\Augmentation_DG\Fadeeva_BG\Output_Train_d\output_30\0072_00003682_img_002391_ts_1661429669308_1670239129.txt
+\\unit32stend2\exchange2\Dataset\ARC\TV\Augmentation_DG\Fadeeva_BG\Output_Train_d\output_30\0037_00005001_img_000150_ts_1661428787862_1670252835.txt
+\\unit32stend2\exchange2\Dataset\ARC\TV\Augmentation_DG\No_Preprocess\Output_Train_d\output_30\0111_00002984_503820890_1670238875.txt
+\\unit32stend2\exchange2\Dataset\ARC\TV\Augmentation_DG\No_Preprocess\Output_Train_d\output_30\0029_00003022_1464849599_1670238660.txt
+\\unit32stend2\exchange2\Dataset\ARC\TV\Augmentation_DG\No_Preprocess\Output_Train_d\output_30\0014_00003102_4528554309_1670238885.txt
+\\unit32stend2\exchange2\Dataset\ARC\TV\Augmentation_DG\No_Preprocess\Output_Train_d\output_30\0051_00004280_1701594566_1670252833.txt
+\\unit32stend2\exchange2\Dataset\ARC\TV\Augmentation_DG\No_Preprocess\Output_Train_d\output_30\0056_00000929_5617757488_1670238878.txt
+\\unit32stend2\exchange2\Dataset\ARC\TV\Augmentation_DG\S_contrast\Output_Train_d\output_30\0054_00000880_7602786626_1670223953.txt
+\\unit32stend2\exchange2\Dataset\ARC\TV\Augmentation_DG\S_contrast\Output_Train_d\output_30\0044_00003170_3054630061_1670238878.txt

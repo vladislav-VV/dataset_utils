@@ -134,8 +134,8 @@ def main(args):
 
 def opt():
     args = argparse.ArgumentParser()
-    args.add_argument("--path_2dir_images", type=str, default=r"/media/vladislav/Windows-SSD/DATASET/COCO/3_class/val", help="Path to the directory with images")
-    args.add_argument("--path_2dir_ann", type=str, default=r"/media/vladislav/Windows-SSD/DATASET/COCO/3_class/val", help="Path to the directory withannotations")
+    args.add_argument("--path_2dir_images", type=str, default=r"/media/vladislav/MailBox/DATASET/VisDrone2019/VisDrone2019-DET-train/VisDrone2019-DET-train/images", help="Path to the directory with images")
+    args.add_argument("--path_2dir_ann", type=str, default=r"/media/vladislav/MailBox/DATASET/VisDrone2019/VisDrone2019-DET-train/VisDrone2019-DET-train/images", help="Path to the directory withannotations")
     args.add_argument("--mode", type=int, default=0, help="mode 0 - format darknet; mode 1 - abs coord")
 
     return args.parse_args()
