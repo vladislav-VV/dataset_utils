@@ -77,21 +77,7 @@ def opt():
 
     args = argparse.ArgumentParser()
     args.add_argument("--in_dir", type=str, default=[
-        # r'\\video-server\unit_32\__common__\4_Dataset\DATASET\ARC\TV\No_Preprocess',
-        #  r"\\video-server\unit_32\__common__\4_Dataset\DATASET\ARC\TV\S_contrast",
-        #  r"\\unit32stend2\exchange2\Dataset\ARC\TV\tv_arma",
-        #  r"\\unit32stend2\exchange2\Dataset\ARC\TV\tv_arma_sc"
-        ######TV#######
-        # r"\\unit32stend2\exchange2\Dataset\ARC\TV\Augmentation_DG_Window_Unreal_12_01_2023\Output_Train_d_dark\output_30",
-        # r"\\unit32stend2\exchange2\Dataset\ARC\TV\Augmentation_DG_Window_Unreal_12_01_2023\Output_Train_d_white\output_30",
-        # r"\\unit32stend2\exchange2\Dataset\ARC\TV\Augmentation_DG_Window_11_01_2023\Output_Train_d\output_20",
-        # r"\\unit32stend2\exchange2\Dataset\ARC\TV\Augmentation_DG_Window_11_01_2023\Output_Train_d\output_30"
-        ######TP#######
-        # r"\\unit32stend2\exchange2\Dataset\ARC\TP\Augmentation_DG_09_01_2023\Output_Train_d\output_20",
-        # r"\\unit32stend2\exchange2\Dataset\ARC\TP\Augmentation_DG_11_01_2023_Windows_Rumin\Output_Train_d\output_20",
-        # r"\\unit32stend2\exchange2\Dataset\ARC\TP\Augmentation_DG_14_01_2023_Windows_Unreal\Output_Train_d\output_20",
-        # r"\\unit32stend2\exchange2\Dataset\ARC\TP\Augmentation_DG_14_01_2023_Windows_Unreal\Output_Train_d\output_27"
-                      r"D:\Dataset\OPEN_DATASET\Windows-dataset\dataset\JPEGImages"]
+                      r"/home/vladislav/Data/coco/train2017"]
                       )
 
     # args.add_argument("--in_dir", type=str, default=[r'\\unit32stend2\exchange2\Dataset\ARC\TV\Validations',
